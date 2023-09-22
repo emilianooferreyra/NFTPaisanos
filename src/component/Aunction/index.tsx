@@ -11,14 +11,14 @@ const Aunction = () => {
   return (
     <article className={styles.aunction}>
       <div className={styles.media}>
-        <img src="src/assets/images/aunction-picture-01.png" alt="Popular Auction" width={311} height={478} className={styles.image} />
+        <img src={'src/assets/images/aunction-picture-01.png'} alt="Popular Auction" width={311} height={478} className={styles.image} />
       </div>
       <div className={styles.info}>
         <div className={styles.content}>
           <h3 className={styles.title}>Marco carrillo®</h3>
           <div className={styles.about}>
-            <InfoPill image="src/assets/images/creator.png" info="Don Paisano" title="Creator" />
-            <InfoPill image="src/assets/images/instant-price.svg" info="3.5 ETH" title="Instant price" />
+            <InfoPill image={'src/assets/images/creator.png'} info="Don Paisano" title="Creator" />
+            <InfoPill image={'src/assets/images/instant-price.svg'} info="3.5 ETH" title="Instant price" />
           </div>
         </div>
         <CurrentBid />

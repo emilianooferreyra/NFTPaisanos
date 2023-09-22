@@ -11,7 +11,7 @@ const Card = () => {
   return (
     <div className={styles.card_container}>
       <div className={styles.card}>
-        <img src="src/assets/images/aunction-picture-02.png" width={300} height={300} className={styles.image} />
+        <img src={'src/assets/images/aunction-picture-02.png'} width={300} height={300} className={styles.image} />
         <div className={styles.info}>
           <div className={styles.card_top_icons}>
             <RareIcon />
@@ -35,9 +35,9 @@ const Card = () => {
         </div>
         <div className={styles.info}>
           <div className={styles.info_creator}>
-            <img src="src/assets/images/creator.png" alt="user" width={24} height={24} className={styles.user_avatar} />
-            <img src="src/assets/images/creator.png" alt="user" width={24} height={24} className={styles.user_avatar} />
-            <img src="src/assets/images/creator.png" alt="user" width={24} height={24} className={styles.user_avatar} />
+            <img src={'src/assets/images/creator.png'} alt="user" width={24} height={24} className={styles.user_avatar} />
+            <img src={'src/assets/images/creator.png'} alt="user" width={24} height={24} className={styles.user_avatar} />
+            <img src={'src/assets/images/creator.png'} alt="user" width={24} height={24} className={styles.user_avatar} />
           </div>
           <p className={styles.stock}>3 in stock</p>
         </div>
