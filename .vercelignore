@@ -1,3 +1,1 @@
-# Ignore everything (folders and files) on root only
-/*
-!src/context/aunction-context.tsx
+aunction-context.tsx
