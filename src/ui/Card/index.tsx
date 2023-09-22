@@ -6,6 +6,7 @@ import RareIcon from '../../assets/icons/RareIcon';
 import HeartIcon from '../../assets/icons/HeartIcon';
 
 import AunctionPicture from '../../assets/images/aunction-picture-02.png';
+import Creator from '../../assets/images/creator.png';
 
 import styles from './styles.module.css';
 
@@ -37,9 +38,9 @@ const Card = () => {
         </div>
         <div className={styles.info}>
           <div className={styles.info_creator}>
-            <img src={'src/assets/images/creator.png'} alt="user" width={24} height={24} className={styles.user_avatar} />
-            <img src={'src/assets/images/creator.png'} alt="user" width={24} height={24} className={styles.user_avatar} />
-            <img src={'src/assets/images/creator.png'} alt="user" width={24} height={24} className={styles.user_avatar} />
+            <img src={Creator} alt="user" width={24} height={24} className={styles.user_avatar} />
+            <img src={Creator} alt="user" width={24} height={24} className={styles.user_avatar} />
+            <img src={Creator} alt="user" width={24} height={24} className={styles.user_avatar} />
           </div>
           <p className={styles.stock}>3 in stock</p>
         </div>
