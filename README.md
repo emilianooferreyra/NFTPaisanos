@@ -1,39 +1,47 @@
-# NFPaisanos Challenge
+# NFPaisanos | NFT Marketplace
 
-## 📝 Description
+### Requeriments
 
-Welcome! This is my submission for the NFPaisanos challenge.
+To complete the challenge, you need to accomplish the following requirements:
 
-The challenge is about creating a web app that shows a list of NFTs and allows the user to filter them by name, price, rarity, and sort them by price, date, likes among other things.
+- Code the different sections of the NFPaisanos Figma file.
+- Integrate the UI with the API that we provide
 
-- [🔗 Production URL](https://paisanoschallenge.laramateo.com/)
-
-- [🔗 Challenge description](https://github.com/Paisanos-io/frontend-challenge/tree/main/web-challenges/NFPaisanos)
+Unfortunately our Backend doesn't have too much intelligence to give you the data filtered and ordered 😢.
+So.., you need to do it by yourself. We trust in you! The force be with you 🥷.
 
 #### 🏆 The Paisano's Trophies 🏆
 
-- [x] Lets get inmmersive! Add animations and microinteractions to the UI!
-- [x] The sound! Add sounds to the interactions in the UI
-- [x] Make it fully responsive! (Mobile, Tab, Desktop, Big Desktop)
-- [x] Make it performant! Get +90 of Performance rate on Lighthouse
-- [x] Make it accessible! Get +90 of Accesibility rate on Lighthouse
-- [x] Respect the best practices! Get +90 of Best Practices on Lighthouse
-- [x] Make it pretty! Setup eslint and prettier rules!
-- [x] Make it installable! Make a PWA!
-- [x] Time for SEO! Get +90 of SEO rate on Lighthouse
-- [x] Time for Coverage! Get +70% of testing coverage!
+- Lets get inmmersive! Add animations and microinteractions to the UI!
+- The sound! Add sounds to the interactions in the UI
+- Make it fully responsive! (Mobile, Tab, Desktop, Big Desktop)
+- Make it performant! Get +90 of Performance rate on Lighthouse
+- Make it accessible! Get +90 of Accesibility rate on Lighthouse
+- Respect the best practices! Get +90 of Best Practices on Lighthouse
+- Make it pretty! Setup eslint and prettier rules!
+- Make it installable! Make a PWA!
+- Time for SEO! Get +90 of SEO rate on Lighthouse
+- Time for Coverage! Get +70% of testing coverage!
 
 #### 🏆 The Manija Trophies 🏆
 
-- Sort by
-  - Oldest, Newest
-  - Least liked, Most liked
-  - Lowest bid, Highest bid
-  - Lowest price, Highest price
-- Rarity filter
-- Search by author, because the auctions don't have a name
+- Add new features to the challenge!
 
-The reason behind why the `liked` filter was deleted is because I integrated it with the `sort by` filter and it was redundant.
+### Design
+
+You will find all the assets and design resources in [this Figma file](https://www.figma.com/file/qIdZeeeDZa4bRiUmatNTRG/NFPaisanos?node-id=2%3A658).
+
+### API Docs
+
+Read the [API Documentation](https://paisanos.notion.site/paisanos/NFPaisanos-Challenge-9c9fe549402d4d03918316d84f809dcb).
+
+### Delivery
+
+At the end of the challenge, send us the repo and a url with the challenge.
+We recommend:
+
+- [Vercel](https://vercel.com)
+- [Netlify](https://www.netlify.com/)
 
 ## 🛠️ Technologies
 
