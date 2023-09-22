@@ -5,13 +5,15 @@ import CandleSticksIcon from '../../assets/icons/CandleSticksIcon';
 import RareIcon from '../../assets/icons/RareIcon';
 import HeartIcon from '../../assets/icons/HeartIcon';
 
+import AunctionPicture from '../../assets/images/aunction-picture-02.png';
+
 import styles from './styles.module.css';
 
 const Card = () => {
   return (
     <div className={styles.card_container}>
       <div className={styles.card}>
-        <img src={'src/assets/images/aunction-picture-02.png'} width={300} height={300} className={styles.image} />
+        <img src={AunctionPicture} width={300} height={300} className={styles.image} />
         <div className={styles.info}>
           <div className={styles.card_top_icons}>
             <RareIcon />
