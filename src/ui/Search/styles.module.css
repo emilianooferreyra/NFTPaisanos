@@ -1,0 +1,34 @@
+input.search {
+  background: url('src/assets/images/search.svg') no-repeat right;
+  background-position: right 0.75rem center;
+  background-size: 1.5rem;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  input.search {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.33;
+    letter-spacing: -0.01em;
+    color: var(--neutrals-6);
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid var(--neutrals-3);
+    padding-bottom: 2.5rem;
+    padding-left: 0;
+    background-position: right 0.75rem center;
+    margin-bottom: 6.75rem;
+
+    background: url('src/assets/images/search-desktop.svg') no-repeat right;
+  }
+
+  input.search::placeholder {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.33;
+    letter-spacing: -0.01em;
+    color: var(--neutrals-6);
+  }
+}

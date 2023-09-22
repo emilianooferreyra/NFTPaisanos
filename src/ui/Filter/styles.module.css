@@ -1,0 +1,29 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sort {
+  z-index: 2;
+}
+
+.type {
+  margin: 0.5rem 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sort {
+    width: 16rem;
+  }
+
+  .type {
+    margin: 0;
+  }
+}
