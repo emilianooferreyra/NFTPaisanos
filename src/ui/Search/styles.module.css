@@ -1,5 +1,5 @@
 input.search {
-  background: url('src/assets/images/search.svg') no-repeat right;
+  background: url('src/assets/images/search.svg') no-repeat right !important;
   background-position: right 0.75rem center;
   background-size: 1.5rem;
 
@@ -21,7 +21,7 @@ input.search {
     background-position: right 0.75rem center;
     margin-bottom: 6.75rem;
 
-    background: url('src/assets/images/search-desktop.svg') no-repeat right;
+    background: url('src/assets/images/search-desktop.svg') no-repeat right !important;
   }
 
   input.search::placeholder {
