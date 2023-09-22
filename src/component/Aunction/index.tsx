@@ -6,21 +6,8 @@ import InfoPill from '../../ui/InfoPill';
 import ArrowIcon from '../../assets/icons/ArrowIcon';
 
 import styles from './styles.module.css';
-// import { useAppContext } from '../../context/aunction-context';
 
 const Aunction = () => {
-  // const { ethPrice, popularAuctions, auctions, fetchEthPrice, fetchPopularAuctions, fetchAuctions } = useAppContext();
-
-  //useEffect(() => {
-  // console.log('Precio de ETH:', ethPrice);
-  // console.log('Subastas populares:', popularAuctions);
-  // console.log('Todas las subastas:', auctions);
-
-  // fetchEthPrice();
-  // fetchPopularAuctions();
-  // fetchAuctions();
-  //}, [ethPrice, popularAuctions, auctions]);
-
   return (
     <article className={styles.aunction}>
       <div className={styles.media}>
