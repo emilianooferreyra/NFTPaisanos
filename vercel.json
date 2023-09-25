@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "assets/images/:path*",
-      "destination": "src/assets/images/:path*"
-    }
-  ]
-}
