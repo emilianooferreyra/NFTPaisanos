@@ -1,9 +1,8 @@
 input.search {
-  background: url('src/assets/images/search.svg') no-repeat right !important;
+  margin-bottom: 1.5rem;
+  background: url('/images/search.svg') no-repeat right;
   background-position: right 0.75rem center;
   background-size: 1.5rem;
-
-  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -21,7 +20,7 @@ input.search {
     background-position: right 0.75rem center;
     margin-bottom: 6.75rem;
 
-    background: url('src/assets/images/search-desktop.svg') no-repeat right !important;
+    background: url('/images/search-desktop.svg') no-repeat right;
   }
 
   input.search::placeholder {
