@@ -16,7 +16,7 @@ export const getCurrentETHPrice = async () => {
     const response = await axiosInstance.get('/nfpaisanos/eth-price');
     return response.data;
   } catch (error) {
-    throw new Error(`Error al obtener el precio de ETH: ${(error as Error).message}`);
+    throw new Error(`Error getting the price of ETH: ${(error as Error).message}`);
   }
 };
 
@@ -25,7 +25,7 @@ export const getPopularAuctions = async () => {
     const response = await axiosInstance.get('/nfpaisanos/popular');
     return response.data;
   } catch (error) {
-    throw new Error(`Error al obtener subastas populares: ${(error as Error).message}`);
+    throw new Error(`Error in obtaining popular auctions: ${(error as Error).message}`);
   }
 };
 
@@ -34,6 +34,6 @@ export const getAuctions = async () => {
     const response = await axiosInstance.get('/nfpaisanos/aunctions');
     return response.data;
   } catch (error) {
-    throw new Error(`Error al obtener todas las subastas: ${(error as Error).message}`);
+    throw new Error(`Error getting all auctions: ${(error as Error).message}`);
   }
 };

@@ -1,6 +1,5 @@
 import Pills from '../Pills';
 import Select from '../Select';
-
 import styles from './styles.module.css';
 
 const filterItems = [

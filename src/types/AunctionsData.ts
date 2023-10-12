@@ -1,4 +1,6 @@
-export interface AuctionData {
+export interface aunctionsData {
+  title: any;
+  value: unknown;
   id: number;
   instantPrice: string;
   highestBid: string;
@@ -19,9 +21,11 @@ export interface AuctionData {
     color: string;
     type: string;
   };
-  bidUsers: {
-    id: number;
-    name: string;
-    avatar: string;
-  }[];
+  bidUsers: [
+    {
+      id: number;
+      name: string;
+      avatar: string;
+    },
+  ];
 }

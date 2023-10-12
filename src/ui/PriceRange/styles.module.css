@@ -1,0 +1,15 @@
+.price_range_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.price_minmax {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins';
+  color: var(--neutrals-8);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1;
+}

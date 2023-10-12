@@ -1,8 +1,9 @@
 // @ts-nocheck
-import Label from '../Label';
-import styles from './styles.module.css';
+
 import ReactSelect, { components, OptionProps } from 'react-select';
 import clsx from 'clsx';
+import Label from '../Label';
+import styles from './styles.module.css';
 
 type colors = 'red' | 'blue' | 'green' | 'orange' | 'pink' | 'purple' | 'black';
 

@@ -8,8 +8,8 @@ const HeartIcon = () => (
       />
     </g>
     <defs>
-      <filter id="filter0_d_3_1142" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <filter id="filter0_d_3_1142" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
         <feMorphology radius="8" operator="erode" in="SourceAlpha" result="effect1_dropShadow_3_1142" />
         <feOffset dy="8" />

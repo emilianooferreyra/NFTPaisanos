@@ -1,7 +1,6 @@
 import Divider from '../Divider';
 import PriceRange from '../PriceRange';
 import Select from '../Select';
-
 import styles from './styles.module.css';
 
 const likesItems = [
@@ -17,7 +16,7 @@ const colorItems = [
   { value: 'purple', label: 'Purple' },
 ];
 
-const Filters = () => {
+const SidebarFilters = () => {
   return (
     <div className={styles.extra_filters}>
       <PriceRange />
@@ -28,4 +27,4 @@ const Filters = () => {
   );
 };
 
-export default Filters;
+export default SidebarFilters;

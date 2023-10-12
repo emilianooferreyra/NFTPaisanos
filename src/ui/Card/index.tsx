@@ -1,20 +1,19 @@
 import Button from '../Button';
-
 import BidIcon from '../../assets/icons/BidIcon';
 import CandleSticksIcon from '../../assets/icons/CandleSticksIcon';
 import RareIcon from '../../assets/icons/RareIcon';
 import HeartIcon from '../../assets/icons/HeartIcon';
-
-import AunctionPicture from '../../assets/images/aunction-picture-02.png';
-import Creator from '../../assets/images/creator.png';
-
 import styles from './styles.module.css';
 
-const Card = () => {
+interface CardProps {
+  aunction: any;
+}
+
+const Card = ({ aunction }: CardProps) => {
   return (
     <div className={styles.card_container}>
       <div className={styles.card}>
-        <img src={AunctionPicture} width={300} height={300} className={styles.image} />
+        <img src={aunction.media.image} width={300} height={300} className={styles.image} />
         <div className={styles.info}>
           <div className={styles.card_top_icons}>
             <RareIcon />
@@ -30,29 +29,26 @@ const Card = () => {
           </div>
         </div>
       </div>
-
       <div className={styles.content}>
         <div className={styles.heading}>
           <h3 className={styles.title}>Amazing digital art</h3>
-          <p className={styles.price}>2.45 ETH</p>
+          <p className={styles.price}>{aunction.instantPrice}</p>
         </div>
         <div className={styles.info}>
           <div className={styles.info_creator}>
-            <img src={Creator} alt="user" width={24} height={24} className={styles.user_avatar} />
-            <img src={Creator} alt="user" width={24} height={24} className={styles.user_avatar} />
-            <img src={Creator} alt="user" width={24} height={24} className={styles.user_avatar} />
+            {aunction.bidUsers.map((bidUser: any, idx: number) => (
+              <img key={idx} src={bidUser.avatar} alt={bidUser.name} width={24} height={24} className={styles.user_avatar} />
+            ))}
           </div>
-          <p className={styles.stock}>3 in stock</p>
+          <p className={styles.stock}>{aunction.stock} in stock</p>
         </div>
         <div className={styles.extra_info}>
           <CandleSticksIcon />
           <p className={styles.bid}>
             Highest bid
-            <span className={styles.highest_bid}>0.001 ETH</span>
+            <span className={styles.highest_bid}>{aunction.highestBid}</span>
           </p>
-          <Button variant="text" onClick={() => {}}>
-            New bid 🔥
-          </Button>
+          <p className={styles.new_bid_text}>New bid 🔥</p>
         </div>
       </div>
     </div>

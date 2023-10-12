@@ -20,6 +20,7 @@
     border-color 0.2s ease-in-out,
     box-shadow 0.2s ease-in-out;
 }
+
 .secondary:hover {
   border-color: var(--neutrals-6);
   box-shadow: 0 0 0.5rem var(--neutrals-5);
@@ -30,6 +31,7 @@
   border: none;
   transition: box-shadow 0.2s ease-in-out;
 }
+
 .primary:hover {
   box-shadow: 0 0 0.5rem var(--primary-1);
 }
@@ -44,6 +46,7 @@
   line-height: 1.67;
   transition: color 0.2s ease-in-out;
 }
+
 .text:hover {
   color: var(--neutrals-8);
 }

@@ -1,12 +1,15 @@
+import { useAunctionContext } from '../../context/aunction-context';
 import styles from './styles.module.css';
 
 const CurrentBid = () => {
+  const { ethUsd } = useAunctionContext();
+
   return (
     <div className={styles.current_bid}>
       <div className={styles.price}>
         <p className={styles.price_heading}>Current bid</p>
-        <p className={styles.eth_price}>1.00 ETH</p>
-        <p className={styles.usd_price}>$3,618.36</p>
+        <p className={styles.eth_price}>{ethUsd.eth} ETH</p>
+        <p className={styles.usd_price}>${ethUsd.usd}</p>
       </div>
       <p className={styles.countdown_heading}>Auction ending in</p>
       <div className={styles.countdown}>

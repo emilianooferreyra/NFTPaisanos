@@ -1,6 +1,5 @@
 import { useState, useEffect, ChangeEvent } from 'react';
 import clsx from 'clsx';
-
 import styles from './styles.module.css';
 
 interface InputProps {

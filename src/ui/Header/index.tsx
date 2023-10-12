@@ -1,10 +1,7 @@
 import { Link } from 'react-router-dom';
-
+import Button from '../Button';
 import Logo from '../../assets/icons/LogoIcon';
 import BurgerIcon from '../../assets/icons/BurgerIcon';
-
-import Button from '../Button';
-
 import styles from './styles.module.css';
 
 const Header = () => (
