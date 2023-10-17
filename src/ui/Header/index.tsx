@@ -9,7 +9,6 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    console.log('first', isMenuOpen);
     setIsMenuOpen(!isMenuOpen);
   };
 
