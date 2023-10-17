@@ -19,7 +19,7 @@ const Header = () => {
         <button className={styles.menuButton} onClick={toggleMenu}>
           <BurgerIcon />
         </button>
-        <div className={`${styles.nav} ${isMenuOpen ? styles.showMenu : ''}`}>
+        <div className={styles.nav}>
           <Link to="/" className={styles.navLink}>
             Discover
           </Link>
