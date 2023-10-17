@@ -1,4 +1,5 @@
-import { useState, useEffect, ChangeEvent } from 'react';
+import { useState, useEffect, ChangeEvent, useCallback } from 'react';
+import { MOBILE_WIDTH_THRESHOLD } from '../../utils/constants';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
@@ -11,11 +12,11 @@ interface InputProps {
 const Input = (props: InputProps) => {
   const { onChange, value = '', className } = props;
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= MOBILE_WIDTH_THRESHOLD);
 
-  const handleWindowResize = () => {
+  const handleWindowResize = useCallback(() => {
     setIsMobile(window.innerWidth <= 480);
-  };
+  }, []);
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize);
@@ -25,9 +26,9 @@ const Input = (props: InputProps) => {
     };
   }, [handleWindowResize]);
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onChange(e.target.value);
-  };
+  const handleChange = useCallback((event: ChangeEvent<HTMLInputElement>) => {
+    onChange(event.target.value);
+  }, []);
 
   const placeholderText = isMobile ? 'Type your keywords' : 'Type to find something nice...';
 

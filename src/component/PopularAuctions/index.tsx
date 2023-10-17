@@ -1,10 +1,10 @@
-import Aunction from '../Aunction';
+import Auction from '../Auction';
 import styles from './styles.module.css';
 
 const PopularAuctions = () => {
   return (
-    <section className={styles.popular_aunctions}>
-      <Aunction />
+    <section className={styles.popularAuctions}>
+      <Auction />
     </section>
   );
 };

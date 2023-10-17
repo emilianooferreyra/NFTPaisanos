@@ -1,4 +1,4 @@
-export const popularAunctions = [
+export const popularAuctions = [
   {
     data: [
       {

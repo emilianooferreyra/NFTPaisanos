@@ -21,7 +21,7 @@
   background-color: var(--neutrals-6);
 }
 
-.pill_input {
+.pillInput {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

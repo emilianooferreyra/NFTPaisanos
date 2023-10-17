@@ -1,4 +1,4 @@
-.card_container {
+.cardContainer {
   background-color: var(--neutrals-2);
   border-radius: 1.5rem;
   padding: 0.75rem;
@@ -17,11 +17,11 @@
   display: none;
 }
 
-.bid_icon {
+.bidIcon {
   margin-left: 0.75rem;
 }
 
-.new_bid_text {
+.newBidText {
   color: var(--neutrals-4);
   font-family: 'Poppins';
   font-size: 0.75rem;
@@ -35,7 +35,7 @@
   border-radius: 1rem;
 }
 
-.content {
+.cardFooter {
   padding: 1.25rem 0;
 }
 
@@ -82,22 +82,22 @@
   padding-bottom: 1rem;
 }
 
-.info_creator {
+.infoBidUsers {
   display: flex;
 }
 
-.extra_info {
+.infoFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.user_avatar {
+.userAvatar {
   border: 2px var(--neutrals-2) solid;
   border-radius: 9999px;
 }
 
-.user_avatar:not(:first-child) {
+.userAvatar:not(:first-child) {
   margin-left: -0.5rem;
 }
 
@@ -113,14 +113,14 @@
   text-overflow: ellipsis;
 }
 
-.highest_bid {
+.highestBid {
   padding-left: 0.25rem;
   font-weight: 600;
   color: var(--neutrals-6);
   line-height: 1.67;
 }
 
-.card {
+.cardHover {
   height: 300px;
   border-radius: 15px;
   padding: 1rem;
@@ -130,15 +130,15 @@
   cursor: pointer;
 }
 
-.card:hover:before {
+.cardHover:hover:before {
   opacity: 1;
 }
 
-.card:hover .info {
+.cardHover:hover .info {
   opacity: 1;
 }
 
-.card:before {
+.cardHover:before {
   content: '';
   position: absolute;
   top: 0;
@@ -153,7 +153,7 @@
   opacity: 0;
 }
 
-.card img {
+.cardHover img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -163,7 +163,7 @@
   border-radius: 15px;
 }
 
-.card .info {
+.cardHover .info {
   position: relative;
   z-index: 3;
   color: #ffffff;
@@ -175,17 +175,17 @@
   gap: 8rem;
 }
 
-.card .info h1 {
+.cardHover .info h1 {
   margin: 0px;
 }
 
-.card .info p {
+.cardHover .info p {
   letter-spacing: 1px;
   font-size: 15px;
   margin-top: 8px;
 }
 
-.card .info button {
+.cardHover .info button {
   outline: none;
   border: none;
   color: #ffffff;
@@ -194,7 +194,7 @@
   transition: 0.4s ease;
 }
 
-.card_top_icons {
+.icons {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -202,7 +202,7 @@
   bottom: 2rem;
 }
 
-.btn_container {
+.actionButtonContainer {
   display: flex;
   justify-content: center;
 }

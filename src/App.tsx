@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AunctionProvider } from './context/aunction-context';
+import { AunctionProvider } from './context/auction-context';
 import Layout from './ui/Layout';
 import './styles/globalStyles.css';
 

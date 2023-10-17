@@ -1,4 +1,4 @@
-export interface aunctionsData {
+export interface auctionsData {
   title: any;
   value: unknown;
   id: number;

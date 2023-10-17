@@ -1,13 +1,8 @@
 .content {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
+  padding-top: 2rem;
 }
 
 .sidebar {
@@ -21,30 +16,30 @@
   margin-right: auto;
 }
 
-.close_icon {
+.closeIcon {
   margin-right: 0.5rem;
   line-height: 0;
 }
 
-.card_container {
+.cardContainer {
   width: 100%;
   max-width: calc(1120px - 32px - 256px);
 }
 
-.card_content {
+.cards {
   display: grid;
   gap: 2rem;
   flex: 1;
 }
 
-.load_more {
+.loadMore {
   margin: 2rem auto 0;
   padding: 0.5rem 0.875rem;
   font-size: 0.875rem;
   width: 100%;
 }
 
-.loading_icon {
+.loadingIcon {
   margin-right: 0.75rem;
   line-height: 0;
 
@@ -61,7 +56,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .content {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -73,23 +68,23 @@
     top: 8rem;
   }
 
-  .card_content {
+  .cardContent {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .load_more {
+  .loadMore {
     width: auto;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .card_content {
+  .cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1240px) {
-  .card_content {
+  .cards {
     grid-template-columns: repeat(3, 1fr);
   }
 }

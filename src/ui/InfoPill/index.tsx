@@ -7,7 +7,7 @@ interface InfoPillProps {
 }
 
 const InfoPill = ({ image, title, info }: InfoPillProps) => (
-  <div className={styles.info_pill}>
+  <div className={styles.infoPill}>
     <img style={{ borderRadius: '30px' }} src={image} alt="" width={40} height={40} />
     <div className={styles.container}>
       <p className={styles.title}>{title}</p>

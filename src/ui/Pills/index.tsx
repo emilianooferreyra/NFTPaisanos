@@ -13,7 +13,7 @@ const Pills = ({ options }: PillsProps) => {
           <label className={styles.label} htmlFor={option.value}>
             {option.label}
           </label>
-          <input type="radio" name="radio" id={option.value} className={styles.pill_input} onClick={() => {}} />
+          <input type="radio" name="radio" id={option.value} className={styles.pillInput} onClick={() => {}} />
         </div>
       ))}
     </div>

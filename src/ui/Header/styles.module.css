@@ -13,7 +13,7 @@
   width: 100%;
 }
 
-.links {
+.nav {
   flex: 1;
   margin-left: 2rem;
   padding-left: 2rem;
@@ -23,7 +23,7 @@
   display: none;
 }
 
-.link {
+.navLink {
   font-family: 'DM Sans';
   font-size: 1rem;
   font-weight: 600;
@@ -31,14 +31,44 @@
   text-decoration: none;
 }
 
-.menu {
+.menuButton {
   line-height: 0;
   background-color: transparent;
   border: none;
 }
 
-.connect_wallet {
+.connectWalletButton {
   display: none !important;
+}
+
+.menuMobile {
+  background-color: var(--neutrals-2);
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 28px;
+  width: 320px;
+  height: 110px;
+  transition: max-height 0.3s;
+  margin-top: 6rem;
+}
+
+.menuList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menuItem {
+  margin-bottom: 10px;
+}
+
+.menuLink {
+  color: var(--neutrals-8);
+
+  font-family: 'DM Sans';
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -54,15 +84,15 @@
     align-self: stretch;
   }
 
-  .links {
+  .nav {
     display: flex;
   }
 
-  .menu {
+  .menuButton {
     display: none;
   }
 
-  .connect_wallet {
+  .connectWalletButton {
     display: block !important;
   }
 }

@@ -7,7 +7,7 @@
   margin-top: 4rem;
 }
 
-.logo_container {
+.logo {
   margin: 0 2rem;
   max-width: 192px;
   display: flex;
@@ -16,7 +16,7 @@
   margin-bottom: 3rem;
 }
 
-.slogan {
+.phrase {
   text-transform: capitalize;
   color: var(--neutrals-8);
   font-weight: 400;
@@ -44,13 +44,13 @@
     margin-top: 6.75rem;
   }
 
-  .logo_container {
+  .logo {
     max-width: unset;
     align-items: center;
     gap: 1.25rem;
   }
 
-  .slogan {
+  .phrase {
     font-size: 1.5rem;
     line-height: 1.33333;
   }

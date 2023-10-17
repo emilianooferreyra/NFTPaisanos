@@ -6,49 +6,50 @@ import HeartIcon from '../../assets/icons/HeartIcon';
 import styles from './styles.module.css';
 
 interface CardProps {
-  aunction: any;
+  auction: any;
 }
 
-const Card = ({ aunction }: CardProps) => {
+const Card = ({ auction }: CardProps) => {
   return (
-    <div className={styles.card_container}>
-      <div className={styles.card}>
-        <img src={aunction.media.image} width={300} height={300} className={styles.image} />
+    <div className={styles.cardContainer}>
+      <div className={styles.cardHover}>
+        <img src={auction.media.image} width={300} height={300} className={styles.image} />
         <div className={styles.info}>
-          <div className={styles.card_top_icons}>
+          <div className={styles.icons}>
             <RareIcon />
             <HeartIcon />
           </div>
-          <div className={styles.btn_container}>
+          <div className={styles.actionButtonContainer}>
             <Button variant="primary" onClick={() => {}}>
               Place a Bid
-              <span className={styles.bid_icon}>
+              <span className={styles.bidIcon}>
                 <BidIcon />
               </span>
             </Button>
           </div>
         </div>
       </div>
-      <div className={styles.content}>
+
+      <div className={styles.cardFooter}>
         <div className={styles.heading}>
           <h3 className={styles.title}>Amazing digital art</h3>
-          <p className={styles.price}>{aunction.instantPrice}</p>
+          <p className={styles.price}>{auction.instantPrice}</p>
         </div>
         <div className={styles.info}>
-          <div className={styles.info_creator}>
-            {aunction.bidUsers.map((bidUser: any, idx: number) => (
-              <img key={idx} src={bidUser.avatar} alt={bidUser.name} width={24} height={24} className={styles.user_avatar} />
+          <div className={styles.infoBidUsers}>
+            {auction.bidUsers.map((bidUser: any, idx: number) => (
+              <img key={idx} src={bidUser.avatar} alt={bidUser.name} width={24} height={24} className={styles.userAvatar} />
             ))}
           </div>
-          <p className={styles.stock}>{aunction.stock} in stock</p>
+          <p className={styles.stock}>{auction.stock} in stock</p>
         </div>
-        <div className={styles.extra_info}>
+        <div className={styles.infoFooter}>
           <CandleSticksIcon />
           <p className={styles.bid}>
             Highest bid
-            <span className={styles.highest_bid}>{aunction.highestBid}</span>
+            <span className={styles.highestBid}>{auction.highestBid}</span>
           </p>
-          <p className={styles.new_bid_text}>New bid 🔥</p>
+          <p className={styles.newBidText}>New bid 🔥</p>
         </div>
       </div>
     </div>

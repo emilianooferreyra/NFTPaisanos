@@ -2,7 +2,7 @@ interface ArrowIconProps {
   direction?: string;
 }
 
-const ArrowIcon = ({ direction }: ArrowIconProps) => {
+const NavigationArrowIcon = ({ direction }: ArrowIconProps) => {
   return (
     <svg transform={direction} transform-origin="center" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -15,4 +15,4 @@ const ArrowIcon = ({ direction }: ArrowIconProps) => {
   );
 };
 
-export default ArrowIcon;
+export default NavigationArrowIcon;

@@ -1,9 +1,8 @@
-.price_range_container {
-  display: flex;
-  flex-direction: column;
+input {
+  cursor: pointer;
 }
 
-.price_minmax {
+.priceMinMax {
   margin-top: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -12,4 +11,58 @@
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1;
+}
+
+.priceRangeContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.range {
+  margin-top: 2rem;
+}
+
+.instantPrice {
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  transform: translateX(-50%);
+  background-color: var(--neutrals-8);
+  border-radius: 8px;
+  white-space: nowrap;
+  padding: 0.25rem 0.2rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.67;
+  text-transform: uppercase;
+}
+
+.instantPrice::after {
+  content: '';
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: var(--neutrals-8);
+  position: absolute;
+  bottom: -0.2rem;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  border-radius: 4px;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  transform: translateX(-50%);
+  background-color: var(--neutrals-3);
+  color: var(--neutrals-8);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
 }

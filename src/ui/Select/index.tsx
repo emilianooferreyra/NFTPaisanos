@@ -17,19 +17,40 @@ const colors: Record<colors, string> = {
   black: '#141416',
 };
 
-const ColorOption = ({ ...props }: OptionProps) => (
-  <div
-    className={clsx(styles.option_color, props.value === 'all' && styles.option_color_all)}
-    style={{ ['--color']: colors[props.data.value as colors] }}
-  >
-    <div className={styles.option_icon_color} />
-    <components.Option {...props} className={clsx(styles.option, props.isSelected && styles.option_selected)} />
-  </div>
-);
+// const ColorOption = ({ ...props }: OptionProps) => (
+//   <div
+//     className={clsx(styles.option_color, props.value === 'all' && styles.option_color_all)}
+//     style={{ ['--color']: colors[props.data.value as colors] }}
+//   >
+//     <div className={styles.option_icon_color} />
+//     <components.Option {...props} className={clsx(styles.option, props.isSelected && styles.option_selected)} />
+//   </div>
+// );
 
-const Option = ({ ...props }: OptionProps) => (
-  <components.Option {...props} className={clsx(styles.option, props.isSelected && styles.option_selected)} />
-);
+const ColorOption = ({ ...props }: OptionProps) => {
+  const { value, data, isSelected } = props;
+  const colorStyle = {
+    '--color': colors[data.value as colors],
+  };
+  const optionColorClass = clsx(styles.option_color, value === 'all' && styles.option_color_all);
+  const optionIconColorClass = styles.option_icon_color;
+  const optionClass = clsx(styles.option, isSelected && styles.option_selected);
+  return (
+    <div className={optionColorClass} style={colorStyle}>
+      <div className={optionIconColorClass} />
+      <components.Option {...props} className={optionClass} />
+    </div>
+  );
+};
+
+// const Option = ({ ...props }: OptionProps) => (
+//   <components.Option {...props} className={clsx(styles.option, props.isSelected && styles.option_selected)} />
+// );
+
+const Option: React.FC<OptionProps> = (props) => {
+  const { isSelected } = props;
+  return <components.Option {...props} className={clsx(styles.option, isSelected && styles.option_selected)} />;
+};
 
 interface SelectProps {
   label: string;
@@ -45,6 +66,8 @@ interface SelectProps {
 }
 
 const Select = ({ options, label, onChange, value, type = 'default', className, hiddenLabel = false }: SelectProps) => {
+  const getSelectedOption = () => options.find((option) => option.value === value);
+
   return (
     <div className={clsx(styles.select_container, className)}>
       <Label className={clsx(hiddenLabel && styles.hidden_label)}>{label}</Label>
@@ -53,9 +76,10 @@ const Select = ({ options, label, onChange, value, type = 'default', className, 
         options={options}
         className={styles.select}
         defaultValue={options[0]}
-        components={type === 'color' ? { Option: ColorOption } : { Option }}
-        value={value ? options.find((option) => option.value === value) : null}
-        onChange={(option: { value: string; label: string }) => onChange(option?.value)}
+        value={getSelectedOption()}
+        onChange={(option) => onChange(option?.value)}
+        components={{ Option: type === 'color' ? ColorOption : Option }}
+        classNamePrefix="react-select"
         classNames={{
           control: (state) => styles.control,
           menu: (state) => styles.menu,

@@ -1,29 +1,30 @@
-import { useAunctionContext } from '../../context/aunction-context';
+import { useAunctionContext } from '../../context/auction-context';
 import styles from './styles.module.css';
 
 const CurrentBid = () => {
   const { ethUsd } = useAunctionContext();
+  const { eth, usd } = ethUsd;
 
   return (
-    <div className={styles.current_bid}>
+    <div className={styles.currentBid}>
       <div className={styles.price}>
-        <p className={styles.price_heading}>Current bid</p>
-        <p className={styles.eth_price}>{ethUsd.eth} ETH</p>
-        <p className={styles.usd_price}>${ethUsd.usd}</p>
+        <p className={styles.priceHeading}>Current bid</p>
+        <p className={styles.ethPrice}>{eth} ETH</p>
+        <p className={styles.usdPrice}>${usd}</p>
       </div>
-      <p className={styles.countdown_heading}>Auction ending in</p>
+      <p className={styles.countdownHeading}>Auction ending in</p>
       <div className={styles.countdown}>
-        <div className={styles.countdown_measure}>
+        <div className={styles.countdownMeasure}>
           <p className={styles.measure}>19</p>
-          <p className={styles.measure_label}>Hrs</p>
+          <p className={styles.measureLabel}>Hrs</p>
         </div>
         <div className={styles.countdown_measure}>
           <p className={styles.measure}>24</p>
-          <p className={styles.measure_label}>mins</p>
+          <p className={styles.measureLabel}>mins</p>
         </div>
-        <div className={styles.countdown_measure}>
+        <div className={styles.countdownMeasure}>
           <p className={styles.measure}>19</p>
-          <p className={styles.measure_label}>secs</p>
+          <p className={styles.measureLabel}>secs</p>
         </div>
       </div>
     </div>

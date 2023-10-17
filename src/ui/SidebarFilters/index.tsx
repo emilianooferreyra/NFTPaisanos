@@ -18,7 +18,7 @@ const colorItems = [
 
 const SidebarFilters = () => {
   return (
-    <div className={styles.extra_filters}>
+    <div className={styles.sidebarFiltersContainer}>
       <PriceRange />
       <Divider />
       <Select label="Likes" options={likesItems} onChange={() => {}} value={''} />

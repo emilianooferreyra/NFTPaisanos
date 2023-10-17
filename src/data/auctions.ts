@@ -1,4 +1,4 @@
-export const aunctions = [
+export const auctions = [
   {
     data: [
       {
