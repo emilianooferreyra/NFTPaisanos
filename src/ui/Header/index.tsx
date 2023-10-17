@@ -1,44 +1,4 @@
-// import { Link } from 'react-router-dom';
-// import Button from '../Button';
-// import Logo from '../../assets/icons/LogoIcon';
-// import BurgerIcon from '../../assets/icons/BurgerIcon';
-// import styles from './styles.module.css';
-// import { useState } from 'react';
-
-// const Header = () => {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-//   const toggleMenu = () => {
-//     setIsMenuOpen(!isMenuOpen);
-//     console.log('first', isMenuOpen);
-//   };
-
-//   return (
-//     <div className={styles.container}>
-//       <header className={styles.header}>
-//         <Logo />
-//         <div className={styles.nav}>
-//           <Link to="/" className={styles.navLink}>
-//             Discover
-//           </Link>
-//           <Link to="/" className={styles.navLink}>
-//             What we do
-//           </Link>
-//         </div>
-//         <button className={styles.menuButton} onClick={toggleMenu}>
-//           <BurgerIcon />
-//         </button>
-//         <Button className={styles.connectWalletButton} onClick={() => {}}>
-//           Connect Wallet
-//         </Button>
-//       </header>
-//     </div>
-//   );
-// };
-
-// export default Header;
-
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '../Button';
 import Logo from '../../assets/icons/LogoIcon';
