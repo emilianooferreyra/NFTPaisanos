@@ -46,10 +46,8 @@
   padding: 10px;
   position: absolute;
   top: 0;
-  right: 28px;
+  right: 0;
   width: 320px;
-  height: 110px;
-  transition: max-height 0.3s;
   margin-top: 6rem;
 }
 
